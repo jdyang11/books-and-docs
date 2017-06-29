@@ -1,0 +1,16 @@
+https://stackoverflow.com/questions/25481325/how-to-set-up-spark-on-windows
+=====================================================================================================
+Steps to install Spark in local mode:
+
+1. Install Java 7 or later. To test java installation is complete, open command prompt type java and hit enter. If you receive a message 'Java' is not recognized as an internal or external command. You need to configure your environment variables, JAVA_HOME and PATH to point to the path of jdk.
+Download and install Scala.
+2. Set SCALA_HOME in Control Panel\System and Security\System goto "Adv System settings" and add %SCALA_HOME%\bin in PATH variable in environment variables.
+3. Install Python 2.6 or later from Python Download link.
+4. Download SBT. Install it and set SBT_HOME as an environment variable with value as <<SBT PATH>>.
+5. Download winutils.exe from HortonWorks repo or git repo. Since we don't have a local Hadoop installation on Windows we have to download winutils.exe and place it in a bin directory under a created Hadoop home directory. Set HADOOP_HOME = <<Hadoop home directory>> in environment variable.
+   comments: install local Hadoop, not just winutils.exe which is included in Hadoop install under %HADOOP_HOME%\bin
+6. We will be using a pre-built Spark package, so choose a Spark pre-built package for Hadoop Spark download. Download and extract it.
+   Set SPARK_HOME and add %SPARK_HOME%\bin in PATH variable in environment variables.
+7. Run command: spark-shell
+8. Open http://localhost:4040/ in a browser to see the SparkContext web UI.
+
