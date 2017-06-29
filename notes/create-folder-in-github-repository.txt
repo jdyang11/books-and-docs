@@ -1,0 +1,10 @@
+https://stackoverflow.com/questions/12258399/how-to-create-folder-in-github-repository
+
+git doesn't store empty folders. Just make sure there's a file in the folder like doc/foo.txt 
+and run git add doc or git add doc/foo.txt and the folder will be added to your local repo 
+once you've committed (and appear on github once you've pushed it)
+
+1. go to the folder inside which you want to create another folder.
+2. click on New file.
+3. on the text field for the file name, first write the folder name you want to create.
+4. then type / , this creates a folder.
