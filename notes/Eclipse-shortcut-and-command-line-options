@@ -1,0 +1,26 @@
+file:///C:/eclipse/readme/readme_eclipse.html#mozTocId19817
+
+Allocating enough memory and solving OutOfMemoryErrors
+eclipse -vmargs -Xmx<memory size>
+with the <memory size> value set to greater than "1024M" (1024 megabytes -- the default).
+
+Selecting a workspace
+Use default content area for your projects as well as for holding any required metadata. 
+For shared or multi-workspace installs you must explicitly specify the location for your workspace 
+using the dialog (or via the " -data " command line argument).
+
+Specifying the Java virtual machine
+eclipse -vm c:\jdk6u22\jre\bin\javaw
+
+Tip: It's generally a good idea to explicitly specify which Java VM to use when running Eclipse. 
+This is achieved with the " -vm " command line argument as illustrated above. 
+If you don't use " -vm ", Eclipse will look on the OS path. When you install other Java-based products, 
+they may change your path and could result in a different Java VM being used when you next launch Eclipse.
+
+*** To create a Windows shortcut to an installed Eclipse:
+
+Navigate to eclipse.exe in Windows Explorer and use Create Shortcut on the content menu.
+Select the shortcut and edit its Properties. In the Target: field append the command line arguments.
+Opening this shortcut launches Eclipse. (You can drag the shortcut to the Windows Desktop if you want to keep it in easy reach.)
+
+Mac OS X
